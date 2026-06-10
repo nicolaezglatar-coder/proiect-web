@@ -78,14 +78,17 @@ Nu este folosit token GitHub. Sunt afișate doar repository-urile publice care n
 
 ### GitHub Pages
 
-Proiectul include un workflow GitHub Actions pentru publicare automată pe GitHub Pages.
+Proiectul este publicat pe GitHub Pages din branch-ul `gh-pages`.
 
-Dacă site-ul nu apare imediat după push:
+Dacă trebuie refăcut deploy-ul:
 
-1. Intră în repository la `Settings`.
-2. Mergi la `Pages`.
-3. La `Build and deployment`, selectează `GitHub Actions`.
-4. Salvează și așteaptă finalizarea workflow-ului `Deploy static site to GitHub Pages`.
+1. Fă commit pe branch-ul `main`.
+2. Rulează `git push origin main`.
+3. Rulează `git push origin main:gh-pages`.
+4. În repository, verifică `Settings` -> `Pages`:
+   - Source: `Deploy from a branch`
+   - Branch: `gh-pages`
+   - Folder: `/root`
 
 ### Netlify
 
