@@ -6,10 +6,8 @@ Site-ul afișează informații personale de bază, educația, competențele și 
 
 ## Live Demo
 
-Adaugă aici linkul după publicare:
-
 ```text
-https://username.github.io/final-project/
+https://nicolaezglatar-coder.github.io/proiect-web/
 ```
 
 ## Funcționalități
@@ -80,15 +78,14 @@ Nu este folosit token GitHub. Sunt afișate doar repository-urile publice care n
 
 ### GitHub Pages
 
-1. Creează un repository public pe GitHub.
-2. Încarcă fișierele din folderul `final-project`.
-3. Intră în repository la `Settings`.
-4. Mergi la `Pages`.
-5. La `Build and deployment`, selectează:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-6. Salvează și așteaptă generarea linkului live.
+Proiectul include un workflow GitHub Actions pentru publicare automată pe GitHub Pages.
+
+Dacă site-ul nu apare imediat după push:
+
+1. Intră în repository la `Settings`.
+2. Mergi la `Pages`.
+3. La `Build and deployment`, selectează `GitHub Actions`.
+4. Salvează și așteaptă finalizarea workflow-ului `Deploy static site to GitHub Pages`.
 
 ### Netlify
 
