@@ -1,0 +1,56 @@
+[
+  {
+    "name": "personal-portfolio",
+    "description": "Portofoliu personal responsive construit cu HTML, CSS si JavaScript.",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-20T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  },
+  {
+    "name": "cv-web-page",
+    "description": "Pagina de prezentare personala cu sectiuni pentru educatie, competente si contact.",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-18T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  },
+  {
+    "name": "github-api-projects",
+    "description": "Aplicatie frontend care citeste repository-uri publice folosind GitHub API.",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-15T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  },
+  {
+    "name": "responsive-layout-practice",
+    "description": "Exercitiu de layout responsive cu CSS Grid, Flexbox si carduri adaptive.",
+    "language": "CSS",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-12T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  },
+  {
+    "name": "student-skills-dashboard",
+    "description": "Interfata demonstrativa pentru afisarea competentelor tehnice si personale.",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-10T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  },
+  {
+    "name": "office-tools-notes",
+    "description": "Proiect local demonstrativ pentru organizarea notitelor si resurselor de studiu.",
+    "language": "Other",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-01-08T10:00:00Z",
+    "html_url": "https://github.com/nicolaezglatar-coder?tab=repositories"
+  }
+]

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolae Zglatar | Portofoliu Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigatie principala">
+      <a class="logo" href="#profile">NZ</a>
+      <ul class="nav-links">
+        <li><a href="#about">Despre mine</a></li>
+        <li><a href="#education">Educație</a></li>
+        <li><a href="#skills">Competențe</a></li>
+        <li><a href="#projects">Proiecte GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile" class="profile-section section">
+      <div class="profile-content">
+        <img src="assets/profile.jpg" alt="Poză profil Nicolae Zglatar" class="profile-img">
+        <div class="profile-text">
+          <p class="eyebrow">Portofoliu personal</p>
+          <h1>Nicolae Zglatar</h1>
+          <h2>Student la Facultatea de Inginerie / Information Technology / Web Developer în formare</h2>
+          <p class="profile-location">Sibiu, România</p>
+          <p>
+            Construiesc proiecte web simple, clare și responsive folosind HTML,
+            CSS, JavaScript și date încărcate din servicii externe precum GitHub API.
+          </p>
+          <div class="profile-actions">
+            <a class="primary-button" href="#projects">Vezi proiectele GitHub</a>
+            <a class="secondary-button" href="#about">Despre mine</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <p class="eyebrow">Profil</p>
+        <h2>Despre mine</h2>
+      </div>
+      <div class="about-box">
+        <p>
+          Sunt o persoană calmă, adaptabilă și orientată spre soluții. Lucrez bine
+          în echipă, comunic eficient și am interes pentru tehnologie, programare
+          și dezvoltare web.
+        </p>
+        <p>
+          Am cunoștințe digitale în utilizarea calculatoarelor, telefoanelor mobile,
+          rețelelor sociale și instrumentelor software.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Studii</p>
+        <h2>Educație</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-year">2017-2021</span>
+          <h3>Colegiul Tehnic Energetic, Sibiu</h3>
+          <p>
+            Profil: Real<br>
+            Specializare: Matematică-Informatică
+          </p>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">2021-2026</span>
+          <h3>Facultatea de Inginerie</h3>
+          <p>
+            Profil: Calculatoare și Tehnologia Informației<br>
+            Specializare: Tehnologia Informației
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section muted-section">
+      <div class="section-heading">
+        <p class="eyebrow">Competențe</p>
+        <h2>Skill-uri / Competențe</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Programare și Web</h3>
+          <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Competențe digitale</h3>
+          <ul>
+            <li>Microsoft Office: Word, Excel</li>
+            <li>Utilizarea calculatoarelor</li>
+            <li>Telefoane mobile</li>
+            <li>Rețele sociale</li>
+            <li>Instrumente software</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Competențe personale</h3>
+          <ul>
+            <li>Lucru în echipă</li>
+            <li>Adaptabilitate</li>
+            <li>Comunicare</li>
+            <li>Engleză - nivel A2</li>
+            <li>Permis categoria B în curs de obținere</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading project-heading">
+        <div>
+          <p class="eyebrow">GitHub API</p>
+          <h2>Proiecte GitHub</h2>
+        </div>
+        <p id="projectCount" class="project-count">Se încarcă proiectele...</p>
+      </div>
+
+      <div class="project-controls" aria-label="Filtre proiecte">
+        <label for="searchInput">
+          Search
+          <input id="searchInput" type="search" placeholder="Caută după nume sau descriere">
+        </label>
+
+        <label for="languageFilter">
+          Limbaj
+          <select id="languageFilter">
+            <option value="all">Toate limbajele</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="loading" class="loading">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Se încarcă proiectele din GitHub...</span>
+      </div>
+
+      <div id="fallbackMessage" class="message fallback-message" hidden>
+        Momentan sunt disponibile puține proiecte publice pe GitHub. Lista este completată cu proiecte locale demonstrative.
+      </div>
+
+      <div id="errorMessage" class="message error-message" hidden></div>
+      <div id="emptyMessage" class="message" hidden>Nu există proiecte care se potrivesc filtrelor alese.</div>
+
+      <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact</h2>
+      </div>
+      <a class="contact-link" href="mailto:zglatarnicolae@gmail.com">zglatarnicolae@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nicolae Zglatar. Portofoliu creat cu HTML, CSS și JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
